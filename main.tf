@@ -13,7 +13,7 @@ data "oci_core_subnet" "this" {
 ############
 resource "oci_core_instance" "this" {
   count                = "${var.instance_count}"
-  availability_domain  = "${data.oci_core_subnet.this.*.availability_domain[count.index % length(data.oci_core_subnet.this.*.availability_domain)]}"
+  availability_domain  = "${var.availability_domain}"
   compartment_id       = "${var.compartment_ocid}"
   display_name         = "${var.instance_display_name == "" ? "" : "${var.instance_count != "1" ? "${var.instance_display_name}_${count.index + 1}" : "${var.instance_display_name}"}"}"
   extended_metadata    = "${var.extended_metadata}"

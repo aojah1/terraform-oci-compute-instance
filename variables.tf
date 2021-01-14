@@ -4,6 +4,10 @@ variable "compartment_ocid" {
   description = "Compartment's OCID where VCN will be created. "
 }
 
+variable "availability_domain"{
+  description = "domain name"
+}
+
 variable "instance_display_name" {
   description = "Name of Instance. "
   default     = ""

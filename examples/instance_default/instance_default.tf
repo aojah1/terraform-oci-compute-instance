@@ -7,6 +7,7 @@ variable "private_key_path" {}
 variable "region" {}
 variable "compartment_ocid" {}
 variable "instance_display_name" {}
+variable "availability_domain" {}
 
 variable "subnet_ocids" {
   type = "list"
@@ -36,4 +37,5 @@ module "instance" {
   subnet_ocids               = "${var.subnet_ocids}"
   ssh_authorized_keys        = "${var.ssh_authorized_keys}"
   block_storage_sizes_in_gbs = "${var.block_storage_sizes_in_gbs}"
+  availability_domain        = "${var.availability_domain}"
 }
