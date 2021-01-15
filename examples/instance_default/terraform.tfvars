@@ -17,7 +17,7 @@ source_ocid = "ocid1.image.oc1.iad.aaaaaaaaxnihckyl7dku6uckrbkequg6dc5vbvdld44wz
 vcn_ocid = "ocid1.vcn.oc1.iad.amaaaaaapwneysaaqcuy5lbgzufrzkitvryr6lhilyo66fbzny5k66326mjq"
 subnet_ocids = ["ocid1.subnet.oc1.iad.aaaaaaaa3ph4exu4uwnowdzxnb7gqcljuoboehnbabidydg3jnszzrh22h4q"]
 ssh_authorized_keys = "/home/jenkins/workspace/terraform-demo/examples/instance_default/id_rsa_no_pass.pub"
-availability_domain = "VXpT:US-ASHBURN-AD-1"
+availability_domain = "VXpT:US-ASHBURN-AD-2"
 
 # Storage Volume Configurations
 block_storage_sizes_in_gbs = [50]
