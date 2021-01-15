@@ -1,8 +1,8 @@
 # OCI Authentication details
 tenancy_ocid = "ocid1.tenancy.oc1..aaaaaaaacg2kx2vh5y62jvq7bqpgmt7komml6rshkw4hlidt5y2su5gacyja"
-user_ocid = "ocid1.user.oc1..aaaaaaaak35yqjnbo3jb6vqfjspklkcbgyzkogxmnwue2vld7peaah6usmiq"
+user_ocid = "ocid1.user.oc1..aaaaaaaamczze3hr44d7ru23iuti5fhdusjeldvi5yg75u6j4vw2kau7tpqq"
 fingerprint= "38:00:bf:5c:02:6b:1a:7f:f0:38:24:d2:e7:5b:15:1b"
-private_key_path = "~/.oci/oci_api_key.pem"
+private_key_path = "/home/opc/.oci/oci_api_key.pem"
 
 # Region
 region = "us-ashburn-1"
