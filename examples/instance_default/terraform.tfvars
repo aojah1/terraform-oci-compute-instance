@@ -16,7 +16,7 @@ instance_display_name = "jenkins-compute"
 source_ocid = "ocid1.image.oc1.iad.aaaaaaaaxnihckyl7dku6uckrbkequg6dc5vbvdld44wzkqzv7i7g6zlv3ja"
 vcn_ocid = "ocid1.vcn.oc1.iad.amaaaaaapwneysaaqcuy5lbgzufrzkitvryr6lhilyo66fbzny5k66326mjq"
 subnet_ocids = ["ocid1.subnet.oc1.iad.aaaaaaaa3ph4exu4uwnowdzxnb7gqcljuoboehnbabidydg3jnszzrh22h4q"]
-ssh_authorized_keys = "~/.ssh/id_rsa_no_pass.pub"
+ssh_authorized_keys = "/home/jenkins/workspace/terraform-demo/examples/instance_default/id_rsa_no_pass.pub"
 availability_domain = "VXpT:US-ASHBURN-1"
 
 # Storage Volume Configurations
