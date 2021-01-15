@@ -20,4 +20,4 @@ ssh_authorized_keys = "/home/jenkins/workspace/terraform-demo/examples/instance_
 availability_domain = "VXpT:US-ASHBURN-AD-2"
 
 # Storage Volume Configurations
-block_storage_sizes_in_gbs = [50]
+block_storage_sizes_in_gbs = [100]
