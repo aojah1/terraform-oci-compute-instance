@@ -39,3 +39,16 @@ module "instance" {
   block_storage_sizes_in_gbs = "${var.block_storage_sizes_in_gbs}"
   availability_domain        = "${var.availability_domain}"
 }
+
+terraform {
+  backend "s3" {
+    endpoint                    = "https://hpc_limited_availability.compat.objectstorage.us-ashburn-1.oraclecloud.com"
+    skip_metadata_api_check     = true
+    skip_region_validation      = true
+    force_path_style            = true
+    skip_credentials_validation = true
+    bucket                      = "moleculardynamics-image-storage"
+    #key                         = "terraform/state/oci/vcn/testVCN/terraform.tfstate"
+    region                      = "us-ashburn-1"
+    } 
+  }
